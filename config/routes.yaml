@@ -1,3 +1,39 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+temps:
+    path: /temps
+    controller: App\Controller\MeteoController::temps
+
+matin:
+    path: /matin
+    controller: App\Controller\MeteoController::matin
+
+previsionSP:
+    path: /prevision
+    controller: App\Controller\MeteoController::previsionSP
+
+prevision:
+    path: /prevision/{moment}/{prenom}
+    controller: App\Controller\MeteoController::prevision
+
+ajoutPatronyme:
+    path: /ajoutPatronyme
+    controller: App\Controller\MeteoController::ajoutPatronyme
+
+cherchePatronyme:
+    path: /cherchePatronyme
+    controller: App\Controller\MeteoController::cherchePatronyme
+
+affichePatronyme:
+    path: /affichePatronyme/{id}
+    methods: GET
+    controller: App\Controller\MeteoController::affichePatronyme
+
+affichePatronymeS:
+    path: /affichePatronymeS/{id}
+    methods: GET
+    controller: App\Controller\MeteoController::affichePatronymeS
+
+

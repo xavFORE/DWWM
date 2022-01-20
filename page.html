@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .jp {
+            color: red;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1> Ajouter un Patronyme </h1>
+
+    <form name="patronyme" method="post">
+        <div id="patronyme">
+            <div>
+                <label class="jp required" for="patronyme_prenom">TON PRENOM</label>
+                <input type="text" id="patronyme_prenom" name="patronyme[prenom]" required="required" placeholder="ton prénom" />
+            </div>
+            <div><label for="patronyme_profession" class="required">Profession</label><input type="text"
+                    id="patronyme_profession" name="patronyme[profession]" required="required" maxlength="255" /></div>
+            <div><label for="patronyme_jour" class="required">Jour</label><input type="text" id="patronyme_jour"
+                    name="patronyme[jour]" required="required" maxlength="255" /></div>
+            <div><button type="submit" id="patronyme_enregistrer" name="patronyme[enregistrer]">Enregistrer</button>
+            </div><input type="hidden" id="patronyme__token" name="patronyme[_token]"
+                value="eb7d0acf3cd93166d.ENFPGRp-aI7mYZLhNMmzJsGG4GE01lxFUf0oww6pb0M.WZgbSVdPW-y-LcK1RI3CFbe30gdF4QYhFLlNu2TOWiF7uRZ4ayk5v7QE3w" />
+        </div>
+    </form>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+    </head>
+    <body>
+
+        <h1> Affiche un Patronyme </h1>
+
+        <h1> {{id}} </h1>
+
+        Nom : {{ patro.prenom }}<br> 
+        profession : {{ patro.profession }}<br> 
+        jour : {{ patro.jour }}<br> 
+
+        {% for pat in listPatro %}
+
+        <p>
+        Nom : {{ pat.prenom }}<br> 
+        profession : {{ pat.profession }}<br> 
+        jour : {{ pat.jour }}<br> 
+        </p>
+
+
+        {% endfor %}
+
+    </body>
+</html>

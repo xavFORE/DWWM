@@ -1,0 +1,1 @@
+$str = mb_strtoupper($str, 'UTF-8');
